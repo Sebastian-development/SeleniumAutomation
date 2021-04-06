@@ -1,14 +1,14 @@
 package javaTest;
 
-public class Impresora {
+public class Printer {
 
     public String printerName;
 
-    public Impresora(String printerName){
+    public Printer(String printerName){
 
         this.printerName = printerName;
     }
-    public Impresora(){
+    public Printer(){
 
     }
 

@@ -7,7 +7,7 @@ import pom.google.GooglePage;
 * double 1.1
 * long 123456789807867543423
 * */
-public class Main {
+public class MainStore {
     public static void main (String[] args) throws InterruptedException {
         Browser browser = new Browser();
         //System.out.println(browser);

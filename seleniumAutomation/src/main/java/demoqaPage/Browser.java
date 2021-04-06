@@ -19,6 +19,7 @@ public class Browser {
     }
 
     public void setDriver(WebDriver driver) {
+
         this.driver = driver;
     }
 

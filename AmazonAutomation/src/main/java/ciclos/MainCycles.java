@@ -1,9 +1,9 @@
 package ciclos;
 
-public class Main3 {
+public class MainCycles {
     public static void main(String [] args){
-        Ciclos ciclo = new Ciclos();
-        int factorial =
+        Cycles ciclo = new Cycles();
+
         //ciclo.forLoop();
         //ciclo.whileLoop();
         //ciclo.factorial(3);

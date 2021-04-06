@@ -1,7 +1,7 @@
 package javaTest;
 
-public class Calculadora {
-    Impresora impresora;
+public class Calculator {
+    Printer printer;
     int numeroConstructor =10;
 
 
@@ -11,7 +11,7 @@ public class Calculadora {
         int suma;
         suma = numero1+numero2;
         numeroConstructor = numeroConstructor-1;
-        impresora.imprimirSuma(suma);
+        printer.imprimirSuma(suma);
        // System.out.println("Es mayor a 10 "+esMayorA10(suma) );
         return suma;
     }
@@ -39,28 +39,28 @@ public class Calculadora {
         System.out.println("Hola soy el constructor");
     }*/
 
-    public Calculadora(String empresa){
-        impresora = new Impresora(empresa);
+    public Calculator(String empresa){
+        printer = new Printer(empresa);
     }
 
     public static void metodoStatic(){
         System.out.println("holi");
     }
     public static void main(String []args){
-        Calculadora calculadora = new Calculadora("MICROSOFT");
-        Calculadora calculadora2 = new Calculadora("google");
-        calculadora.sumar(10,10);
-        calculadora2.sumar(100,1);
-        calculadora.sumar(1,1);
+        Calculator calculator = new Calculator("MICROSOFT");
+        Calculator calculator2 = new Calculator("google");
+        calculator.sumar(10,10);
+        calculator2.sumar(100,1);
+        calculator.sumar(1,1);
 
        // Impresora.imprimirSuma(1);
 
         System.out.println("Voy a sumar");
-        int suma = calculadora.sumar(10,12);
+        int suma = calculator.sumar(10,12);
 
-        int restar = calculadora.restar(10,12);
-        int multiplicar = calculadora.multiplicacion(10,12);
-        double dividir = calculadora.divicion(10,12);
+        int restar = calculator.restar(10,12);
+        int multiplicar = calculator.multiplicacion(10,12);
+        double dividir = calculator.divicion(10,12);
         System.out.println(dividir);
 
 

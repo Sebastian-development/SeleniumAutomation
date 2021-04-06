@@ -1,6 +1,6 @@
 package collections;
 
-import javaTest.Impresora;
+import javaTest.Printer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ public class Main5 {
 
     public static void main(String[] args){
         MyCollections myCollections = new MyCollections();
-        ArrayList<Impresora> ArrayListBusiness = new ArrayList<Impresora>();
+        ArrayList<Printer> ArrayListBusiness = new ArrayList<Printer>();
         ArrayList<Integer> myArrayList = new ArrayList<Integer>();
        // myCollections.createArrayList();
        // myCollections.printArrayList(myArrayList);

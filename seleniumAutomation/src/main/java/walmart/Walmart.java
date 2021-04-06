@@ -10,16 +10,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Walmart {
     public WebDriver driver;
-    @FindBy(how = How.CLASS_NAME, using = "coaching-tip_layer__389Rm")
-    private WebElement tipWindow;
-    @FindBy(how = How.CLASS_NAME, using = "search-bar-desktop_input__33Tbk")
-    private WebElement searchBar;
-    @FindBy(how = How.XPATH, using = "//button[@data-automation-id='search-icon']")
-    private WebElement buttonSearch;
-    @FindBy(how = How.XPATH, using = "//p/div[text()='iPhone SE 2 Apple 64 GB Negro Telcel']")
-    private WebElement linkArticleIphone;
-    @FindBy(how = How.XPATH, using = "//div/img[@alt='2']")
-    private WebElement iphoneImg;
+
+
     @FindBy(how = How.XPATH, using = "//div[@class='product-details_addToCartContainer__1mcG-']/div/button[text()='Agregar al carrito']")
     private WebElement buttonAddToCart;
     @FindBy(how = How.CLASS_NAME, using = "goToFullCartPage")
@@ -55,30 +47,9 @@ public class Walmart {
         this.driver = driver;
         PageFactory.initElements(driver,this);
     }
-    public void closeTipWindow(){
-        WebDriverWait wait = new WebDriverWait(driver, 30);
-        wait.until(ExpectedConditions.elementToBeClickable(tipWindow));
-        tipWindow.click();
-    }
-    public void searchIphone(String nameCellPhone){
-        searchBar.sendKeys(nameCellPhone);
-    }
-    public void clickSearch(){
-        WebDriverWait wait = new WebDriverWait(driver, 30);
-        wait.until(ExpectedConditions.elementToBeClickable(buttonSearch));
-        buttonSearch.click();
-    }
-    public void selectArticle(){
-        WebDriverWait wait = new WebDriverWait(driver, 30);
-        wait.until(ExpectedConditions.elementToBeClickable(linkArticleIphone));
-        linkArticleIphone.click();
-    }
-    public void addToCart(){
-        WebDriverWait wait = new WebDriverWait(driver, 30);
-        wait.until(ExpectedConditions.elementToBeClickable(iphoneImg));
-        iphoneImg.click();
-        buttonAddToCart.click();
-    }
+
+
+
     public void selectCart(){
         buttonSelectCart.click();
     }
@@ -86,6 +57,8 @@ public class Walmart {
         buttonContinueWithThePurshase.click();
     }
     public void buyAsGuest(){
+        WebDriverWait wait2 = new WebDriverWait(driver, 30);
+        wait2.until(ExpectedConditions.elementToBeClickable(buttonContinueAsGuest));
         buttonContinueAsGuest.click();
     }
 }

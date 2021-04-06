@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class Main {
+public class MainDemoqaPage {
     public static void main(String [] args){
     Browser browser = new Browser();
     browser.loadURL("https://www.demoqa.com");
@@ -39,7 +39,5 @@ public class Main {
     demoqaPage.getListWebElements("//div[@class='element-list collapse show']/ul/li");
     demoqaPage.listBoxElements(demoqaPage.getListWebElements("//div[@class='element-list collapse show']/ul/li"));
     browser.tearDown();
-
-
     }
 }

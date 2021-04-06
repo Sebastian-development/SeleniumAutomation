@@ -1,7 +1,7 @@
 package collections;
 
-import javaTest.Impresora;
-import tiendaChida.Tienda;
+import javaTest.Printer;
+import Store.Tienda;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,23 +36,23 @@ public class MyCollections {
             System.out.println(myArrayList.get(i));
         }
     }
-    public ArrayList<Impresora> createArrayListOfBusiness(){
-        ArrayList<Impresora> arrayListBusiness = new ArrayList<Impresora>();
-        Impresora impresora = new Impresora();
-        impresora.printerName = "microsoft";
-        impresora.printerName = "amazon";
-        arrayListBusiness.add(impresora);
-        arrayListBusiness.add(impresora);
-        arrayListBusiness.add(new Impresora("Google"));
-        arrayListBusiness.add(new Impresora("Facebook"));
-        arrayListBusiness.add(new Impresora("Walmart"));
+    public ArrayList<Printer> createArrayListOfBusiness(){
+        ArrayList<Printer> arrayListBusiness = new ArrayList<Printer>();
+        Printer printer = new Printer();
+        printer.printerName = "microsoft";
+        printer.printerName = "amazon";
+        arrayListBusiness.add(printer);
+        arrayListBusiness.add(printer);
+        arrayListBusiness.add(new Printer("Google"));
+        arrayListBusiness.add(new Printer("Facebook"));
+        arrayListBusiness.add(new Printer("Walmart"));
         printNamesOfBusiness(arrayListBusiness);
     return arrayListBusiness;
     }
-    public void printNamesOfBusiness(ArrayList<Impresora> ArrayListBusiness){
+    public void printNamesOfBusiness(ArrayList<Printer> ArrayListBusiness){
 
         for (int i=0; i<ArrayListBusiness.size();i++){
-            Impresora s = ArrayListBusiness.get(i) ;
+            Printer s = ArrayListBusiness.get(i) ;
             System.out.println(s.printerName);
 
         }

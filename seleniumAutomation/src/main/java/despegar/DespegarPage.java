@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Despegar {
+public class DespegarPage {
     public WebDriver driver;
     @FindBy(how = How.XPATH, using = "//div/i[@title='Vuelos']")
     private WebElement buttonVuelos;
@@ -35,7 +35,7 @@ public class Despegar {
     private WebElement textPrize;
 
 
-    public Despegar(WebDriver driver){
+    public DespegarPage(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver,this);
     }

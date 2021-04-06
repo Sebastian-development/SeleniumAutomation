@@ -1,9 +1,4 @@
-package tiendaChida;
-
-import javaTest.Impresora;
-
-import java.util.ArrayList;
-import java.util.List;
+package Store;
 
 public class Tienda {
     int celulares;

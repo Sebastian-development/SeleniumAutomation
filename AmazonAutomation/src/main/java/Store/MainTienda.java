@@ -1,6 +1,6 @@
-package tiendaChida;
+package Store;
 
-public class Main4 {
+public class MainTienda {
     public static void main(String [] args){
         Tienda tienda = new Tienda();
         tienda.celulares =0;

@@ -1,6 +1,6 @@
 package ciclos;
 
-public class Ciclos {
+public class Cycles {
     public void get(){
         for (int i = 5; i <= 10; ++i) {
             System.out.println(i);
